@@ -118,6 +118,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ################ CONFIGURAÇÕES DO AUTHTOKEN / CORS #######################
 
+# explicita meu usuário customizado
+AUTH_USER_MODEL = "backend.Usuario"
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
